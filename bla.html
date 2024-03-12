@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    .switch {
+    position: relative;
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 20px;
+}
+
+.switch input {
+    opacity: 0;
+    width: 0;
+    height: 0;
+}
+
+.slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border: 1px double black;
+    /* background-color: #ccc; */
+    -webkit-transition: .4s;
+    transition: .4s;
+    padding: 1px;
+}
+
+.slider:before {
+    position: absolute;
+    content: "";
+    height: 14px;
+    width: 14px;
+    left: 4px;
+    bottom: 2.5px;
+    /* background-color: white; */
+    background: linear-gradient(to right, white 50%, black 50%);
+    border: 1px solid black;
+    -webkit-transition: .4s;
+    transition: .4s;
+}
+
+input:checked+.slider {
+    background-color: #180BB1;
+    border: 0;
+
+}
+
+
+input:checked+.slider:before {
+    -webkit-transform: translateX(18px);
+    -ms-transform: translateX(18px);
+    transform: translateX(18px);
+    background: white;
+    border: 0;
+    bottom: 3.5px;
+
+}
+
+.slider.round {
+    border-radius: 34px;
+}
+
+.slider.round:before {
+    border-radius: 50%;
+}
+</style>
+<body>
+    <div class="d-flex align-items-center gap-2">
+        <label class="switch">
+          <input type="checkbox" id="contrastbtn"> <!-- Removed the second occurrence of the id -->
+          <span class="slider round"></span>
+        </label>
+        <p class="fs-10 text-black fw-medium">High Contrast</p>
+    </div>
+    <div class="d-flex align-items-center gap-2">
+        <label class="switch">
+          <input type="checkbox" id="contrastbtn"> <!-- Removed the second occurrence of the id -->
+          <span class="slider round"></span>
+        </label>
+        <p class="fs-10 text-black fw-medium">High Contrast</p>
+    </div>
+</body>
+<script>
+    //  let contrastbtn = document.getElementById("contrastbtn");
+    //     let contrastState = false;
+    //     let textOrange = document.getElementById("text-orange");
+    //     let bgOrange = document.getElementById("bg-orange");
+    //     let contrastbtn1 = document.getElementById("contrastbtn1");
+    //     let contrastbtn2 = document.getElementById("contrastbtn2");
+
+    //     // Function to toggle contrast mode
+    //     function toggleContrast() {
+    //         let isChecked = contrastbtn1.checked; // Get the current checked state
+    //         contrastbtn1.checked = !isChecked; // Toggle the checked state
+    //         contrastbtn2.checked = !isChecked; // Toggle the checked state for the second button
+    //     }
+
+    //     // Add event listener to both buttons
+    //     contrastbtn1.addEventListener("click", toggleContrast);
+    //     contrastbtn2.addEventListener("click", toggleContrast);
+    //     contrastbtn.addEventListener("click", function () {
+    //         if (contrastState === false) {
+    //             contrastState = true;
+    //             textOrange.style.setProperty("color", "#180BB1", "important");
+    //             textOrange.style.setProperty("border-color", "#180BB1", "important");
+    //             textOrange.style.backgroundColor = "#EDF8FF"
+    //             bgOrange.style.backgroundColor = "#180BB1"
+    //             bgOrange.style.borderColor = "#180BB1"
+
+    //         } else {
+    //             contrastState = false;
+    //             textOrange.style.color = "";
+    //             textOrange.style.backgroundColor = "";
+    //             textOrange.style.borderColor = "";
+    //             bgOrange.style.backgroundColor = ""
+    //             bgOrange.style.borderColor = "#FF5C35"
+    //         }
+    //     });
+
+    let contrastbtn1 = document.getElementById("contrastbtn1");
+        let contrastbtn2 = document.getElementById("contrastbtn2");
+
+        // Function to toggle contrast mode
+        function toggleContrast() {
+            let isChecked = contrastbtn1.checked; // Get the current checked state
+            contrastbtn1.checked = !isChecked; // Toggle the checked state
+            contrastbtn2.checked = !isChecked; // Toggle the checked state for the second button
+        }
+
+        // Add event listener to both buttons
+        contrastbtn1.addEventListener("click", toggleContrast);
+        contrastbtn2.addEventListener("click", toggleContrast);
+
+</script>
+</html>
