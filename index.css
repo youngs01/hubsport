@@ -2,6 +2,7 @@
 
 body {
     font-family: "Lora", serif;
+    overflow-x: hidden;
 }
 
 h1,
@@ -15,8 +16,9 @@ p {
     padding: 0;
 }
 
-p{
+p {
     font-size: 1.1rem;
+    color: #2e3343c7;
 }
 
 .fs-15 {
@@ -147,6 +149,17 @@ input:checked+.slider:before {
     background-color: #FF5C35;
 }
 
+.text-blue{
+    color: #180BB1;
+    border-color: #180BB1 !important;
+    background-color: #EDF8FF !important;
+}
+
+.bg-blue{
+    background-color: #180BB1;
+    border-color: #180BB1 !important;
+}
+
 .fw-500 {
     font-weight: 500;
 }
@@ -170,14 +183,11 @@ input:checked+.slider:before {
 .modal-body {
     background-color: #f6f9fc;
     border: 1.2px solid #175FA3;
-
 }
 
 .ls {
     letter-spacing: 0.4px;
 }
-
-/* .search-div {} */
 
 .search-div input {
     width: auto;
@@ -185,26 +195,95 @@ input:checked+.slider:before {
     background-color: #F6F9FC;
 }
 
-.hero-div{
+.hero-div {
     background-color: #FEF4EA;
 }
 
-.hero-div h1{
+.hero-div h1 {
     font-weight: 600 !important;
 }
 
-.fs-55{
-font-size: 55px;
+.fs-55 {
+    font-size: 55px;
 }
 
-.-secondary{
+.-secondary {
     color: #213343;
 }
 
-.border-orange{
+.border-orange {
     border: 2px solid #FF5C35;
-
 }
+
+.mw-card-img{
+    max-width:130px;
+}
+
+.swiper-button-next::after,
+.swiper-button-prev::after {
+    content: none;
+}
+
+.swiper-button-next i,
+.swiper-button-prev i{
+    font-size: 20px;
+    color: black;
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.swiper-button-next i{
+    right: 20px !important;
+}
+.swiper-pagination{
+width: 100px;
+}
+
+.swiper-wrapper{
+    cursor:grab;
+}
+
+.parent-hotspot{
+    background-color: #F6F9FC;
+}
+
+.hotspot-video i{
+    background-color: #FB7655;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+}
+
+.fw-thin{
+    font-weight: 200;
+}
+
+.fs-medium{
+font-size: 17px;
+}
+
+.swiper-pagination-bullet{
+    width: 15px;
+    height: 15px;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #213343 !important;
+}
+
+
+
+.search-div{
+    display: none;
+}
+
+
+
+
+
+
 
 @media screen and (max-width:990px) {
 
@@ -212,26 +291,25 @@ font-size: 55px;
     .nav-started-btn {
         width: 100%;
     }
-    .search-div {
-        display: flex !important;
+
+   
+    .contrastbtn-parent {
+        display: none !important;
     }
+
+
 }
 
 
 @media screen and (max-width:576px) {
-    .parent-div-btn a{
+    .parent-div-btn a {
         width: 100%;
-      
+
     }
 }
 
-
-
-
-
-
-
-
-
-
-
+@media screen and (max-width:400px) {
+    .mw-card-img{
+        max-width: 100px;
+    }
+}

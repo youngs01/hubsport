@@ -2,23 +2,23 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
-    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
-  <link rel="stylesheet" href="index.css">
+    integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="stylesheet" href="index.css" />
   <title>HubSpot</title>
 </head>
 
 <body>
-
   <div class="container-fluid pt-3 d-none d-lg-block">
     <div class="container">
       <div class="row">
         <div class="col-6">
           <div class="d-flex align-items-center gap-4">
             <div class="d-flex align-items-center gap-1">
-              <img src="globe.png" alt="">
+              <img src="globe.png" alt="" />
               <select class="bg-transparent border-0 primary-hover outline-none fw-medium fs-10 rounded-0">
                 <option value="en" selected>English</option>
                 <option value="fr">French</option>
@@ -27,10 +27,10 @@
                 <!-- Add more options for other languages as needed -->
               </select>
             </div>
-            <div class="d-flex align-items-center gap-2">
+            <div class="d-flex align-items-center gap-2 contrastbtn-parent">
               <label class="switch">
-                <input type="checkbox">
-                <span class="slider round" id="contrastbtn"></span>
+                <input type="checkbox" />
+                <span class="slider round contrastbtn"></span>
               </label>
               <p class="fs-10 text-black fw-medium">High Contrast</p>
             </div>
@@ -41,20 +41,22 @@
           </div>
         </div>
         <div class="col-6 d-flex align-items-center gap-3 justify-content-end">
-          <div class="d-flex align-items-center p-0 m-0 " style="box-sizing: border-box">
-            <button class="search-icon outline-none bg-transparent rounded-start fs-10"><i
-                class="fas fa-magnifying-glass f-10"></i></button>
-            <input type="text" class="nav-input outline-none rounded-end fs-10 bg-transparent border-1 "
-              placeholder="search...">
+          <div class="d-flex align-items-center p-0 m-0" style="box-sizing: border-box">
+            <button class="search-icon outline-none bg-transparent rounded-start fs-10">
+              <i class="fas fa-magnifying-glass f-10"></i>
+            </button>
+            <input type="text" class="nav-input outline-none rounded-end fs-10 bg-transparent border-1"
+              placeholder="search..." />
           </div>
           <a href="#/" class="fs-10 text-decoration-none text-dark fw-semibold">Log in</a>
           <a href="#/" class="fs-10 text-decoration-none text-dark fw-semibold">Customer Support</a>
           <div class="dropdown">
             <button class="btn fs-10 border-0 d-flex align-items-center justify-content-center gap-1" type="button"
               data-bs-toggle="dropdown" aria-expanded="false">
-              About <i class="fas fa-chevron-down " style="font-size: 10px;"></i>
+              About
+              <i class="fas fa-chevron-down" style="font-size: 10px"></i>
             </button>
-            <ul class="dropdown-menu  shadow">
+            <ul class="dropdown-menu shadow">
               <li><a class="dropdown-item" href="#">About us</a></li>
               <li><a class="dropdown-item" href="#">Careers</a></li>
               <li><a class="dropdown-item" href="#">Contact Us</a></li>
@@ -67,49 +69,51 @@
     </div>
   </div>
 
-  <nav class="navbar navbar-expand-lg border-bottom  position-relative">
-    <div class="container ">
-      <a class="navbar-brand d-block d-lg-none " href="#"><img src="download.svg" class="nav-logo w-100 h-100"></a>
-      <div class="search-div col mx-4 position-relative d-none align-items-center d-none justify-content-center">
+  <nav class="navbar navbar-expand-lg border-bottom position-relative">
+    <div class="container">
+      <a class="navbar-brand d-block d-lg-none" href="#"><img src="download.svg" class="nav-logo w-100 h-100" /></a>
+      <div class="search-div col mx-4 position-relative  align-items-center  justify-content-center">
         <input type="text" class="text-center outline-none w-100 h-100 rounded-pill ff py-2"
-          placeholder="search HubSpot.com">
+          placeholder="search HubSpot.com" />
       </div>
-      <button class="navbar-toggler " type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse justify-content-between pt-3" id="navbarNav">
         <ul class="navbar-nav d-flex align-items-center gap-4">
           <a class="navbar-brand d-none d-lg-block" href="#"><img src="HubSpot-Logo-700x394.webp"
-              class="nav-logo w-100 h-100"></a>
-          <li class="nav-item ">
+              class="nav-logo w-100 h-100" /></a>
+          <li class="nav-item">
             <a class="nav-link nav-btn text d-flex fs-18 align-items-center gap-2 fw-semibold ff" aria-current="page"
-              href="#">Software <i class="fas text-decoration-none fa-chevron-down fs-10"></i></a>
+              href="#">Software
+              <i class="fas text-decoration-none fa-chevron-down fs-10"></i></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-btn text  fw-semibold ff" href="#">Pricing</a>
+            <a class="nav-link nav-btn text fw-semibold ff" href="#">Pricing</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link nav-btn text  d-flex align-items-center gap-2 fw-semibold ff" href="#">Resources <i
-                class="fas fa-chevron-down text-decoration-none fs-10"></i></a>
+            <a class="nav-link nav-btn text d-flex align-items-center gap-2 fw-semibold ff" href="#">Resources
+              <i class="fas fa-chevron-down text-decoration-none fs-10"></i></a>
           </li>
-          <li class="nav-item">
-          </li>
+          <li class="nav-item"></li>
         </ul>
         <div class="d-flex align-items-center flex-lg-row flex-column justify-content-end gap-2">
           <a href="#/"
-            class="text-decoration-none text-center border-orange  text-white fw-semibold fs-15 px-3 py-2 rounded ff nav-demo-btn bg-orange">Get a demo</a>
-          <a href="#/"
-            class="text-decoration-none text-center border border-2 fw-semibold px-3 py-2 fs-15 rounded ff nav-started-btn text-orange">Get started free</a>
-       
-          </div>
+            class="text-decoration-none text-center border-orange text-white fw-semibold fs-15 px-3 py-2 rounded ff nav-demo-btn bg-orange">Get a
+            demo</a>
+
+          <a href="#/" 
+            class="text-decoration-none text-center border border-2 fw-semibold px-3 py-2 fs-15 rounded ff nav-started-btn text-orange">
+            Get started free</a>
+        </div>
 
         <div class="container d-block d-lg-none">
-          <div class="row pt-5 ">
+          <div class="row pt-5">
             <div class="col-6">
               <div class="d-flex flex-column justify-content-start align-items-start gap-4">
                 <div class="d-flex align-items-center gap-1">
-                  <img src="globe.png" alt="">
+                  <img src="globe.png" alt="" />
                   <select class="bg-transparent border-0 primary-hover outline-none fw-medium fs-10 rounded-0">
                     <option value="en" selected>English</option>
                     <option value="fr">French</option>
@@ -119,8 +123,8 @@
                 </div>
                 <div class="d-flex align-items-center gap-2">
                   <label class="switch">
-                    <input type="checkbox">
-                    <span class="slider round" id="contrastbtn"></span>
+                    <input type="checkbox" />
+                    <span class="slider round contrastbtn" id="contrastbtn"></span>
                   </label>
                   <p class="fs-10 text-black fw-medium">High Contrast</p>
                 </div>
@@ -134,7 +138,6 @@
             <div class="col-6 d-flex align-items-start flex-column gap-3 border-primary bla">
               <a href="#/" class="fs-10 text-decoration-none text-dark fw-semibold">Log in</a>
               <a href="#/" class="fs-10 text-decoration-none text-dark fw-semibold">Customer Support</a>
-
             </div>
           </div>
         </div>
@@ -142,33 +145,143 @@
     </div>
   </nav>
 
-<div class="container-fluid px-0 hero-div">
-  <div class="container py-5">
-    <div class="row py-5">
-      <div class="col-12 col-lg-6">
-        <div class="d-flex  justify-content-start flex-column gap-3">
-        <h6 class="ff fw-semibold  text-start" style="font-size: 14px;">HUBSPOT CUSTOMER PLATFORM</h6>
-        <h1 class="fs-55 -secondary">Grow better with <span class="d-none d-lg-block"></span> HubSpot</h1>
-        <p class="text-body-secondary ff pt-2">Software that's powerful, not overpowering. Seamlessly connect your data, teams, and customers on one customer platform that grows with your business.</p>
-        <div class="d-flex align-items-center gap-4 parent-div-btn flex-column flex-sm-row">
-          <a href="#/" class="text-decoration-none text-white border-orange  text-center  px-5 py-3 py-lg-4 fs-18  rounded  ff bg-orange ls" style="font-weight: 600;">Get a demo</a>
-          <a href="#/" class="text-decoration-none fs-18 text-center  px-5 py-3 py-lg-4 bg-white border border-2 fw-semibold  
-          fs-15 rounded ff   text-orange">Get started free</a>
-       </div> 
-       <p class="fs-15 ff text-body-secondary">Get a demo of our premium software, or get started with free tools.</p>
-      </div>
-      </div>
+  <div class="container-fluid px-0 hero-div">
+    <div class="container py-5">
+      <div class="row py-5">
+        <div class="col-12 col-lg-6">
+          <div class="d-flex justify-content-start flex-column gap-3">
+            <h6 class="ff fw-semibold text-start" style="font-size: 14px">
+              HUBSPOT CUSTOMER PLATFORM
+            </h6>
+            <h1 class="fs-55 -secondary">
+              Grow better with <span class="d-none d-lg-block"></span> HubSpot
+            </h1>
+            <p class="text-body-secondary ff pt-2">
+              Software that's powerful, not overpowering. Seamlessly connect
+              your data, teams, and customers on one customer platform that
+              grows with your business.
+            </p>
+            <div class="d-flex align-items-center gap-4 parent-div-btn flex-column flex-sm-row">
+              <a href="#/" id="bgChange"
+                class="text-decoration-none text-white border-orange text-center px-5 py-3 py-lg-4 fs-18 rounded ff bg-orange ls"
+                style="font-weight: 600">Get a demo</a>
+              <a href="#/" id="textChange"
+                class="text-decoration-none fs-18 text-center px-5 py-3 py-lg-4 bg-white border border-2 fw-semibold fs-15 rounded ff text-orange">Get
+                started free</a>
+            </div>
+            <p class="fs-15 ff text-body-secondary">
+              Get a demo of our premium software, or get started with free
+              tools.
+            </p>
+          </div>
+        </div>
 
+        <div class="col-12 col-lg-6 pt-5 pt-lg-0">
+          <div class="d-flex align-items-end justify-content-end">
+            <img src="EN Round 3 Variant 1 Desktop-1.webp" alt="" class="w-100 h-100" />
+          </div>
+        </div>
+      </div>
     </div>
   </div>
-</div>
 
+  <div class="container py-5">
+    <div class="row gap-3">
+      <div class="col-12">
+        <div class="d-flex align-items-center flex-column justify-content-center">
+          <h6 class="ff fw-semibold text-center text-body-secondary">
+            194,000+ customers in over 120 countries grow their businesses
+            with HubSpot
+          </h6>
+        </div>
+      </div>
+      <div class="col-12 position-relative px-5">
+        <div class="swiper-button-prev">
+          <i class="fa-solid fa-chevron-left"></i>
+        </div>
+        <div class="swiper-button-next d-flex flex-column-reverse">
+          <i class="fa-solid fa-chevron-right"></i>
+        </div>
+        <div class="swiper mySwiper1 w-100 h-100">
+          <div class="swiper-wrapper d-flex d-flex align-items-center">
+            <div class="swiper-slide d-flex align-items-center justify-content-center text-center">
+              <img src="Unipart.webp" alt="" class="w-100 mw-card-img" />
+            </div>
+            <div class="swiper-slide d-flex align-items-center justify-content-center text-center">
+              <img src="reddit (1).webp" alt="" class="w-100 mw-card-img" />
+            </div>
+            <div class="swiper-slide d-flex align-items-center justify-content-center text-center">
+              <img src="eventbrite.webp" alt="" class="w-100 mw-card-img" />
+            </div>
+            <div class="swiper-slide d-flex align-items-center justify-content-center text-center">
+              <img src="Doordash.webp" alt="" class="w-100 mw-card-img" />
+            </div>
+            <div class="swiper-slide d-flex align-items-center justify-content-center text-center">
+              <img src="MCSaatchiGroupLogo-1.webp" alt="" class="w-100 mw-card-img" />
+            </div>
+            <div class="swiper-slide d-flex align-items-center justify-content-center text-center">
+              <img src="weightwatchers.webp" alt="" class="w-100 mw-card-img" />
+            </div>
+            <div class="swiper-slide d-flex align-items-center justify-content-center text-center">
+              <img src="wwf.webp" alt="" class="w-100 mw-card-img" />
+            </div>
+            <div class="swiper-slide d-flex align-items-center justify-content-center text-center">
+              <img src="tumblr.webp" alt="" class="w-100 mw-card-img" />
+            </div>
+            <div class="swiper-slide d-flex align-items-center justify-content-center text-center">
+              <img src="The Motley Fool Logo for HS Website-1.webp" alt="" class="w-100 mw-card-img" />
+            </div>
+            <div class="swiper-slide d-flex align-items-center justify-content-center text-center">
+              <img src="Smeg-Logo.webp" alt="" class="w-100 h-100 mw-card-img" />
+            </div>
+            <div class="swiper-slide d-flex align-items-center justify-content-center text-center">
+              <img src="casio-logo-3.webp" alt="" class="w-100 mw-card-img" />
+            </div>
+            <div class="swiper-slide d-flex align-items-center justify-content-center text-center">
+              <img src="Kahoot-logo.webp" alt="" class="w-100 mw-card-img" />
+            </div>
+          </div>
+          <br><br><br>
+          <div class="swiper-pagination d-block d-sm-none"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- 
+  <div class="container-fluid px-0 py-5 parent-hotspot">
+   <div class="container">
+    <div class="row">
+      <div class="col-6 position-relative ">
+        <div class="hotspot-video p-2 position-relative">
+          <img src="Homepage Video Thumbnail 1_2x.webp" alt="" class="w-100 position-absolute">
+          <a href="#/"><i class="fas fa-play text-white px-3 py-3 rounded-circle"></i></a>
+
+        </div>
+      </div>
+      <div class="col-6 ps-3 d-flex flex-column gap-3 ">
+        <div class="d-flex flex-column gap-2">
+        <h2 class="ff text fw-bold">What is HubSpot?</h2>
+          <p class="pe-5 fw-thin fs-medium   ff">
+            HubSpot is a customer platform with all the software, integrations, and resources you need to connect your marketing, sales, content management, and customer service. HubSpot's connected platform enables you to grow your business faster by focusing on what matters most: your customers.
+          </p>
+        </div>
+        <div class="">
+          <p class="ff fs-medium">Get a demo to learn about our premium software, or get started with our full suite of free tools and upgrade as you grow.</p>
+        </div>
+      </div>
+    </div>
+   </div>
+  </div> -->
+
+  <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
     crossorigin="anonymous"></script>
   <script src="https://kit.fontawesome.com/0a7c965840.js" crossorigin="anonymous"></script>
   <script src="index.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script></script>
 </body>
 
 </html>
