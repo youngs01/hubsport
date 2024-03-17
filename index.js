@@ -43,59 +43,10 @@ document.addEventListener("DOMContentLoaded", function () {
 
     contrastbtns.forEach(function (btn) {
         btn.addEventListener("click", function () {
-            contrastState = true;
-            if (contrastState) {
-                contrastState = true;
-                bgOranges.forEach(function (button) {
-                    button.classList.toggle('bg-blue')
-                })
-                textOranges.forEach(function (button2) {
-                    button2.classList.toggle('text-blue')
-                })
-
-            } else {
-                contrastState = false;
-                bgOranges.forEach(function (button) {
-                    button.classList.remove('bg-blue')
-                })
-                textOranges.forEach(function (button2) {
-                    button.classList.remove('text-blue')
-                })
-
-
-            }
+            let body = document.body;
+            body.classList.toggle("high-contrast")
         });
     });
-
-
-
-    // contrastbtns.forEach(function (contrastbtn) {
-    //     contrastbtn.addEventListener("click", function () {
-    //         if (contrastState === false) {
-    //             contrastState = true;
-    //             textOranges.forEach(function (element) {
-    //                 element.style.setProperty("color", "#180BB1", "important");
-    //                 element.style.setProperty("border-color", "#180BB1", "important");
-    //                 element.style.setProperty("background-color", "#EDF8FF", "important");
-    //             });
-    //             bgOranges.forEach(function (element) {
-    //                 element.style.backgroundColor = "#180BB1";
-    //                 element.style.borderColor = "#180BB1";
-    //             });
-    //         } else {
-    //             contrastState = false;
-    //             textOranges.forEach(function (element) {
-    //                 element.style.color = "";
-    //                 element.style.borderColor = "";
-    //                 element.style.backgroundColor = "";
-    //             });
-    //             bgOranges.forEach(function (element) {
-    //                 element.style.backgroundColor = "#FF5C35";
-    //                 element.style.borderColor = "#FF5C35";
-    //             });
-    //         }
-    //     });
-    // });
 
     // this function make the swiper responsive on different 
     // screen size
@@ -149,9 +100,23 @@ document.addEventListener("DOMContentLoaded", function () {
         }
         else {
             inputElement.style.display = 'none';
-navTogglerState = false
+            navTogglerState = false
 
         }
+    })
+
+    let playBtn = document.getElementById("playBtn");
+    let modalThumnail = document.querySelector(".modal-thumnail")
+    let modalVideo = document.getElementById("modalVideo");
+    let resetBtn = document.querySelector(".modal-close-btn")
+    playBtn.addEventListener("click", function () {
+        modalThumnail.classList.toggle("d-none")
+        modalVideo.classList.remove("d-none")
+    })
+
+    resetBtn.addEventListener("click", function(){
+        modalThumnail.classList.remove("d-none")
+        modalVideo.classList.toggle("d-none")
     })
 
 

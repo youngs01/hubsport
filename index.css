@@ -1,4 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400..700;1,400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Lexend:wght@100..900&display=swap');
+
 
 body {
     font-family: "Lora", serif;
@@ -113,12 +115,9 @@ input:checked+.slider:before {
     border-color: #180BB1;
     border: none;
     color: #0068B1;
-    /* font-size: 15px; */
 }
 
 .nav-input {
-    transition: display ease 0.5s;
-    /* Smooth transition effect */
     border-left: 0;
     border-color: #180BB1;
     display: none;
@@ -129,7 +128,7 @@ input:checked+.slider:before {
 }
 
 .ff {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: "Lexend", sans-serif;
 }
 
 .text {
@@ -140,25 +139,6 @@ input:checked+.slider:before {
     font-size: 18px;
 }
 
-.text-orange {
-    color: #FF5C35;
-    border-color: #FF5C35 !important;
-}
-
-.bg-orange {
-    background-color: #FF5C35;
-}
-
-.text-blue{
-    color: #180BB1;
-    border-color: #180BB1 !important;
-    background-color: #EDF8FF !important;
-}
-
-.bg-blue{
-    background-color: #180BB1;
-    border-color: #180BB1 !important;
-}
 
 .fw-500 {
     font-weight: 500;
@@ -211,12 +191,9 @@ input:checked+.slider:before {
     color: #213343;
 }
 
-.border-orange {
-    border: 2px solid #FF5C35;
-}
 
-.mw-card-img{
-    max-width:130px;
+.mw-card-img {
+    max-width: 130px;
 }
 
 .swiper-button-next::after,
@@ -225,7 +202,7 @@ input:checked+.slider:before {
 }
 
 .swiper-button-next i,
-.swiper-button-prev i{
+.swiper-button-prev i {
     font-size: 20px;
     color: black;
     position: absolute;
@@ -234,50 +211,137 @@ input:checked+.slider:before {
     transform: translateY(-50%);
 }
 
-.swiper-button-next i{
+.swiper-button-next i {
     right: 20px !important;
 }
-.swiper-pagination{
-width: 100px;
+
+.swiper-pagination {
+    width: 100px;
 }
 
-.swiper-wrapper{
-    cursor:grab;
+.swiper-wrapper {
+    cursor: grab;
 }
 
-.parent-hotspot{
-    background-color: #F6F9FC;
-}
-
-.hotspot-video i{
-    background-color: #FB7655;
-    background-repeat: no-repeat;
-    background-size: cover;
-    background-position: center;
-}
-
-.fw-thin{
+.fw-thin {
     font-weight: 200;
 }
 
-.fs-medium{
-font-size: 17px;
+.fs-medium {
+    font-size: 17px;
 }
 
-.swiper-pagination-bullet{
+.swiper-pagination-bullet {
     width: 15px;
     height: 15px;
 }
 
-.swiper-pagination-bullet-active{
+.swiper-pagination-bullet-active {
     background-color: #213343 !important;
 }
 
-
-
-.search-div{
+.search-div {
     display: none;
 }
+
+.transition {
+    transition: all ease 0.4s;
+}
+
+.bg-orange {
+    background-color: #FF5C35;
+    color: white;
+    border: 2px solid #FF5C35;
+}
+
+.bg-orange:hover {
+    background-color: #ec5731;
+    border-color: #ec5731;
+}
+
+.high-contrast .bg-orange {
+    background-color: #180BB1;
+    border-color: #180BB1;
+}
+
+.high-contrast .bg-orange:hover {
+    background-color: #c3e8ff;
+    color: #180BB1;
+    border-color: #c3e8ff;
+}
+
+.text-orange {
+    background-color: white;
+    border: 2px solid #ff623b;
+    color: #ff623b;
+}
+
+.text-orange:hover {
+    background-color: #FEF4EA;
+}
+
+.high-contrast .text-orange {
+    color: #180BB1;
+    background-color: #e6f3ff;
+    border-color: #180BB1;
+}
+
+.high-contrast .text-orange:hover {
+    background-color: #d8ebff;
+}
+
+.parent-hotspot {
+    background-color: #F6F9FC;
+}
+
+.parent-hotspot i{
+background-color: #ff623b;
+padding: 25px 25px;
+}
+
+.parent-hotspot i:hover{
+    background-color: #ec5731;
+}
+
+.fw-300{
+    font-weight: 300;
+}
+
+
+.fs-17{
+    font-size: 17px;
+}
+
+.modla-dilog{
+max-width: 1000px !important;
+}
+
+.modal-close-btn:hover{
+background-color: #eaf7ff !important;
+}
+
+
+.modal-btn{
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+background-color: #fe5b3691;
+}
+
+.modal-btn i{
+    font-size: 45px;
+}
+
+.modal-thumnail:hover .modal-btn{
+    background-color:  #FE5C36;
+}
+
+
+
+
+
+
+
 
 
 
@@ -286,30 +350,41 @@ font-size: 17px;
 
 
 @media screen and (max-width:990px) {
-
     .nav-demo-btn,
     .nav-started-btn {
         width: 100%;
     }
 
-   
     .contrastbtn-parent {
         display: none !important;
     }
-
-
 }
-
 
 @media screen and (max-width:576px) {
     .parent-div-btn a {
         width: 100%;
-
+    }
+    .modal-btn i{
+        font-size: 35px;
     }
 }
 
 @media screen and (max-width:400px) {
-    .mw-card-img{
+    .mw-card-img {
         max-width: 100px;
     }
+    .modal-btn i{
+        font-size: 20px;
+    }
+}
+
+@media screen and (max-width:351px) {
+ .parent-hotspot .flex-wrap{
+    justify-content: center;
+ }
+
+ .parent-hotspot .flex-wrap a{
+    width: 100%;
+ }
+    
 }
