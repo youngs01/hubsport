@@ -2,35 +2,13 @@ document.addEventListener("DOMContentLoaded", function () {
 
     // this function is useed to visible search bar in the navbar
 
-    let navSearchIcon = document.querySelector(".search-icon");
-    let navInput = document.querySelector(".nav-input");
-    navInput.style.display = "none";
+    let navInputParent = document.querySelector(".navInput-parent");
+    let navInputBtn = document.querySelector(".navInput-btn");
+    navInputBtn.addEventListener("click",function(){
+    navInputParent.classList.toggle("toggleWidth")    
+    })
 
-    navSearchIcon.addEventListener("click", function () {
-        if (navInput.style.display === "none" || navInput.style.display === "") {
-            navInput.style.display = "block";
-            navInput.focus();
-            navSearchIcon.style.border = "1px solid black";
-            navSearchIcon.style.borderRight = "0px solid transparent";
-            navInput.style.borderTop = "1px solid #180BB1";
-            navSearchIcon.style.borderColor = "#180BB1";
-            console.log('open input');
-        } else {
-            navInput.style.display = "none";
-            navSearchIcon.style.border = "0px solid black";
-            navSearchIcon.style.borderRight = "0px solid transparent";
-            navInput.style.borderTop = "0px solid #180BB1";
-            navSearchIcon.style.borderColor = "#180BB1";
-        }
-    });
 
-    navInput.addEventListener("keydown", function (event) {
-        if (event.keyCode === 13) {
-            (navInput.value === "") ? alert("Write something") : alert("Processing");
-
-        }
-
-    });
 
     // this function changes the color and background of offers button
     // from orange to blue 
@@ -114,7 +92,7 @@ document.addEventListener("DOMContentLoaded", function () {
         modalVideo.classList.remove("d-none")
     })
 
-    resetBtn.addEventListener("click", function(){
+    resetBtn.addEventListener("click", function () {
         modalThumnail.classList.remove("d-none")
         modalVideo.classList.toggle("d-none")
     })

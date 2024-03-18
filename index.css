@@ -36,8 +36,8 @@ p {
 }
 
 .primary-hover:hover {
-    color: #0068B1;
-    text-decoration: underline;
+    color: #0068B1 !important;
+    text-decoration: underline !important;
 }
 
 .fs-10 {
@@ -45,15 +45,11 @@ p {
 }
 
 .switch {
-    position: relative;
-    display: flex;
-    align-items: center;
     width: 40px;
     height: 20px;
 }
 
 .switch input {
-    opacity: 0;
     width: 0;
     height: 0;
 }
@@ -61,12 +57,9 @@ p {
 .slider {
     position: absolute;
     cursor: pointer;
-    top: 0;
     left: 0;
     right: 0;
-    bottom: 0;
     border: 1px double black;
-    /* background-color: #ccc; */
     -webkit-transition: .4s;
     transition: .4s;
     padding: 1px;
@@ -111,17 +104,21 @@ input:checked+.slider:before {
     border-radius: 50%;
 }
 
-.search-icon {
-    border-color: #180BB1;
-    border: none;
+.navInput-parent {
+    width: 30px;
+    transition: all ease 1s;
+}
+
+.navInput-parent i {
     color: #0068B1;
 }
 
-.nav-input {
-    border-left: 0;
-    border-color: #180BB1;
-    display: none;
+
+.toggleWidth {
+    width: 220px;
+    border: 1px solid #3d86ca
 }
+
 
 .nav-logo {
     max-width: 100px;
@@ -156,10 +153,6 @@ input:checked+.slider:before {
     color: #175FA3;
 }
 
-.software-modal {
-    top: 100%;
-}
-
 .modal-body {
     background-color: #f6f9fc;
     border: 1.2px solid #175FA3;
@@ -170,7 +163,6 @@ input:checked+.slider:before {
 }
 
 .search-div input {
-    width: auto;
     border: 1.3px solid #3d86ca;
     background-color: #F6F9FC;
 }
@@ -294,46 +286,44 @@ input:checked+.slider:before {
     background-color: #F6F9FC;
 }
 
-.parent-hotspot i{
-background-color: #ff623b;
-padding: 25px 25px;
+.parent-hotspot i {
+    background-color: #ff623b;
+    padding: 25px 25px;
 }
 
-.parent-hotspot i:hover{
+.parent-hotspot i:hover {
     background-color: #ec5731;
 }
 
-.fw-300{
+.fw-300 {
     font-weight: 300;
 }
 
-
-.fs-17{
+.fs-17 {
     font-size: 17px;
 }
 
-.modla-dilog{
-max-width: 1000px !important;
+.modal-close-btn:hover {
+    background-color: #eaf7ff !important;
 }
 
-.modal-close-btn:hover{
-background-color: #eaf7ff !important;
-}
-
-
-.modal-btn{
+.modal-btn {
     top: 40%;
     left: 50%;
     transform: translateX(-50%);
-background-color: #fe5b3691;
+    background-color: #fe5b3691;
 }
 
-.modal-btn i{
+.modal-btn i {
     font-size: 45px;
 }
 
-.modal-thumnail:hover .modal-btn{
-    background-color:  #FE5C36;
+.modal-thumnail:hover .modal-btn {
+    background-color: #FE5C36;
+}
+
+.customer-plateform {
+    background-color: #FEF4EA;
 }
 
 
@@ -344,12 +334,14 @@ background-color: #fe5b3691;
 
 
 
-
-
-
-
+@media screen and (max-width:1100px) {
+    .toggleWidth {
+        width: 180px;
+    }
+}
 
 @media screen and (max-width:990px) {
+
     .nav-demo-btn,
     .nav-started-btn {
         width: 100%;
@@ -364,7 +356,8 @@ background-color: #fe5b3691;
     .parent-div-btn a {
         width: 100%;
     }
-    .modal-btn i{
+
+    .modal-btn i {
         font-size: 35px;
     }
 }
@@ -373,18 +366,23 @@ background-color: #fe5b3691;
     .mw-card-img {
         max-width: 100px;
     }
-    .modal-btn i{
+
+    .fs-17{
+        font-size: 15px;
+    }
+
+    .modal-btn i {
         font-size: 20px;
     }
 }
 
 @media screen and (max-width:351px) {
- .parent-hotspot .flex-wrap{
-    justify-content: center;
- }
+    .parent-hotspot .flex-wrap {
+        justify-content: center;
+    }
 
- .parent-hotspot .flex-wrap a{
-    width: 100%;
- }
-    
+    .parent-hotspot .flex-wrap a {
+        width: 100%;
+    }
+
 }
