@@ -97,7 +97,19 @@ document.addEventListener("DOMContentLoaded", function () {
         modalVideo.classList.toggle("d-none")
     })
 
-
+    var swiper = new Swiper(".mySwiper2", {
+        slidesPerView: 1,
+        spaceBetween: 30,
+        loop:true,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+            nextEl: ".swiper-btn2-next",
+            prevEl: ".swiper-btn2-prev",
+          },
+      });
 
 
 
