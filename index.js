@@ -113,4 +113,30 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
 
+let modalBtn2 = document.getElementById("modalBtn2");
+let modalVideo2 = document.getElementById("modalvideoSrc");
+let modlaImage = document.getElementById("imageModal");
+modalBtn2.addEventListener("click",function(){
+    // modalVideo2.src = ""
+modlaImage.src = "Sales-Dynasty.webp"
+
+    
+})
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 });

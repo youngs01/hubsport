@@ -377,6 +377,36 @@ left: -50px;
     background-color: #192733;
 }
 
+.modal-video2 button{
+    background-color: #ec5731 !important ;
+    opacity: 0.8;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.achivements-div{
+ background-color: #F6F9FC;
+}
+
+.achivements-div .d-grid{
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-row-gap: 2rem;
+    grid-column-gap: 2rem;
+}
+
+.achivements-div a{
+    color: #175FA3;
+}
+
+.achivements-div .badgeicon{
+    width: 60px !important;
+    object-fit: contain;
+}
+
+
+
+
 @media screen and (max-width:1100px) {
     .toggleWidth {
         width: 180px;
@@ -397,6 +427,18 @@ left: -50px;
     .spotlightFeatures-parent .justify-content-end{
         justify-content: center !important;
 
+    }
+
+    .growth-div{
+        flex-direction: column-reverse;
+    }
+    .growth-div .img-col{
+        justify-content: center !important;
+    }
+
+    .growth-div .img-col img{
+        width: 100%;
+        max-width: 350px;
     }
 
 }
@@ -420,6 +462,9 @@ left: -50px;
         font-size: 30px !important;
     }
     
+    .growth-div .col-content{
+        justify-content: center;
+    }
 
 }
 
