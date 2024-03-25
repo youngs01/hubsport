@@ -4,8 +4,8 @@ document.addEventListener("DOMContentLoaded", function () {
 
     let navInputParent = document.querySelector(".navInput-parent");
     let navInputBtn = document.querySelector(".navInput-btn");
-    navInputBtn.addEventListener("click",function(){
-    navInputParent.classList.toggle("toggleWidth")    
+    navInputBtn.addEventListener("click", function () {
+        navInputParent.classList.toggle("toggleWidth")
     })
 
 
@@ -100,43 +100,54 @@ document.addEventListener("DOMContentLoaded", function () {
     var swiper = new Swiper(".mySwiper2", {
         slidesPerView: 1,
         spaceBetween: 30,
-        loop:true,
+        loop: true,
         pagination: {
-          el: ".swiper-pagination",
-          clickable: true,
+            el: ".swiper-pagination",
+            clickable: true,
         },
         navigation: {
             nextEl: ".swiper-btn2-next",
             prevEl: ".swiper-btn2-prev",
-          },
-      });
+        },
+    });
 
 
 
-let modalBtn2 = document.getElementById("modalBtn2");
-let modalVideo2 = document.getElementById("modalvideoSrc");
-let modlaImage = document.getElementById("imageModal");
-modalBtn2.addEventListener("click",function(){
-    // modalVideo2.src = ""
-modlaImage.src = "Sales-Dynasty.webp"
-
-    
-})
+    let modalBtn2 = document.getElementById("modalBtn2");
+    let modalVideo2 = document.getElementById("modalvideoSrc");
+    let modlaImage = document.getElementById("imageModal");
+    modalBtn2.addEventListener("click", function () {
+        // modalVideo2.src = ""
+        modlaImage.src = "Sales-Dynasty.webp"
+    })
 
 
+    // // let accordionToogler = document.querySelectorAll(".removingblock")
+    // // if(window.innerWidth <= 990 ){
+    // //     accordionToogler.classList.remove("d-block")
+    // // }
+    // function adjustAccordionState() {
+    //     // Get all elements with the specified class name
+    //     const accordions = document.querySelectorAll('.accordion-collapse');
 
+    //     // Check window width and remove 'show' class if necessary
+    //     if (window.innerWidth <= 990) {
+    //         accordions.forEach(accordion => {
+    //             if (accordion.classList.contains('show')) {
+    //                 accordion.classList.remove('show');
+    //             }
+    //             else{
+    //                 accordion.classList.toggle("show")
+    //             }
+    //         });
+    //     }
+    // }
 
+    // // Call the function initially
+    // adjustAccordionState();
 
-
-
-
-
-
-
-
-
-
-
+    // // Add event listener to adjust accordion state when window is resized
+    // window.addEventListener('resize', adjustAccordionState);
 
 
 });

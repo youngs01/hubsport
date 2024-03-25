@@ -23,7 +23,7 @@ p {
     color: #2e3343fb;
 }
 
-.fs-16{
+.fs-16 {
     font-size: 16px;
 }
 
@@ -350,62 +350,101 @@ input:checked+.slider:before {
     background-color: #EAF0F6 !important;
 }
 
-.spotlightFeatures-parent{
+.spotlightFeatures-parent {
     background-color: #c3e8ff;
 }
 
-.new-hostpot{
+.new-hostpot {
     background-color: #F6F9FC;
 }
 
 .swiper-btn2-next,
-.swiper-btn2-prev{
-    bottom:  50%;
+.swiper-btn2-prev {
+    bottom: 50%;
     z-index: 100;
 }
 
 
-.swiper-btn2-next{
+.swiper-btn2-next {
     right: -50px;
 }
 
-.swiper-btn2-prev{
-left: -50px;
+.swiper-btn2-prev {
+    left: -50px;
 }
 
-.hubspot-solutions{
+.hubspot-solutions {
     background-color: #192733;
 }
 
-.modal-video2 button{
-    background-color: #ec5731 !important ;
+.modal-video2 button {
+    background-color: #ec5731 !important;
     opacity: 0.8;
     top: 50%;
     left: 50%;
     transform: translateX(-50%);
 }
 
-.achivements-div{
- background-color: #F6F9FC;
+.achivements-div {
+    background-color: #F6F9FC;
 }
 
-.achivements-div .d-grid{
+.achivements-div .d-grid {
     grid-template-columns: 1fr 1fr 1fr;
     grid-row-gap: 2rem;
     grid-column-gap: 2rem;
 }
 
-.achivements-div a{
+.achivements-div a {
     color: #175FA3;
 }
 
-.achivements-div .badgeicon{
+.achivements-div .badgeicon {
     width: 60px !important;
     object-fit: contain;
 }
 
+.footer {
+    background-color: #192733;
+}
 
+.footer .col-lg-3 {
+    border-left: 1px solid rgba(255, 255, 255, 0.404);
+}
 
+.footer-links {
+    color: #B6C7D6;
+}
+
+.footer-links:hover {
+    color: #175FA3;
+    text-decoration: underline;
+}
+
+.footer-icons {
+    font-size: 27px;
+    color: #B6C7D6 !important;
+}
+
+.footer-icons-div {
+    overflow-x: visible;
+}
+
+.footer-copyright-parent img {
+    width: 120px;
+}
+
+.footer-copyright-parent p {
+    color: #B6C7D6;
+}
+
+.footer-copyright-parent a {
+    color: white;
+}
+
+.footer-copyright-parent a:hover {
+    color: #175FA3;
+}
 
 @media screen and (max-width:1100px) {
     .toggleWidth {
@@ -424,22 +463,28 @@ left: -50px;
         display: none !important;
     }
 
-    .spotlightFeatures-parent .justify-content-end{
+    .spotlightFeatures-parent .justify-content-end {
         justify-content: center !important;
 
     }
 
-    .growth-div{
+    .growth-div {
         flex-direction: column-reverse;
     }
-    .growth-div .img-col{
+
+    .growth-div .img-col {
         justify-content: center !important;
     }
 
-    .growth-div .img-col img{
+    .growth-div .img-col img {
         width: 100%;
         max-width: 350px;
     }
+
+    .footer .col-lg-3 {
+        border-left: 1px solid transparent;
+    }
+
 
 }
 
@@ -453,17 +498,23 @@ left: -50px;
     }
 
     .swiper-btn2-next,
-    .swiper-btn2-prev{
+    .swiper-btn2-prev {
         bottom: 0;
-        
+
     }
 
-    .hubspot-solutions .heading{
+    .hubspot-solutions .heading {
         font-size: 30px !important;
     }
-    
-    .growth-div .col-content{
+
+    .growth-div .col-content {
         justify-content: center;
+    }
+
+    .footer-icons-div {
+        justify-content: center !important;
+        gap: 30px;
+        overflow-x: scroll;
     }
 
 }
